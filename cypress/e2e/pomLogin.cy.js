@@ -5,14 +5,17 @@ describe('Login Test', () => {
 const login = new LoginPage()
 
 it('Login with valid credentials', () => {
+cy.fixture('loginData').then((data) => {
 
 login.visit()
 
-login.enterUsername('tomsmith')
+login.enterUsername(data.username)
 
-login.enterPassword('SuperSecretPassword!')
+login.enterPassword(data.password)
 
 login.clickLogin()
+
+})
 
 })
 
