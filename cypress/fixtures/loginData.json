@@ -1,4 +1,5 @@
 {
     "username": "tomsmith",
-    "password": "SuperSecretPassword!"
+    "password": "SuperSecretPassword!",
+    "invalidUser": "adminLogin"
   }
